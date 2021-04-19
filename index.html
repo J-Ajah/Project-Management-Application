@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Board</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <template id="tooltip">
+      <h2>More Info</h2>
+      <p></p>
+    </template>
+    <header id="main-header">
+      <h1>Task Manager</h1>
+    </header>
+
+    <div  class="wrapper">
+    <section id="active-projects">
+      <header>
+        <h2>Active Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p1"
+          data-extra-info="Got lifetime access, but would be nice to finish it soon!"
+          class="card"
+          draggable="true"
+        >
+          <h2>Complete the training program</h2>
+          <p>The program duration is 4 weeks. Catch up with time</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+        <li
+          id="p2"
+          data-extra-info="Quite important because of the deadline attached to it"
+          class="card"
+          draggable="true"
+        >
+          <h2>Go Shopping</h2>
+          <p>Shop for items for upcoming occasion</p>
+          <button class="alt">More Info</button>
+          <button>Finish</button>
+        </li>
+      </ul>
+    </section>
+    <section id="finished-projects">
+      <header>
+        <h2>Finished Projects</h2>
+      </header>
+      <ul>
+        <li
+          id="p3"
+          data-extra-info="Super important conference! Fictional but still!"
+          class="card"
+          draggable="true"
+        >
+          <h2>Portfolio Website</h2>
+          <p>
+           A proffesional website that provides details about me and what I do
+          </p>
+          <button class="alt">More Info</button>
+          <button>Activate</button>
+        </li>
+      </ul>
+    </section>
+  </div>
+  </body>
+</html>
